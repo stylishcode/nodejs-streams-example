@@ -1,0 +1,21 @@
+# Readable stream
+  Fonte de dados a serem processados. Podem ser um banco de dados, um arquivo
+  de texto, uma requisição web ou qualquer fonte de dados
+
+# Transform streams
+  São usadas para a etapa de conversão de dados, de mapeamento, essa etapa
+  é a que pega cada pedacinho (chunk) do dado e vai mandando ele pra frente
+
+# Writable stream
+  Etapa final, para cada item que vier na corrente de dados, ele vai jogar na
+  saida do processo. Essa saída pode ser o console.log, um banco de dados ex-
+  terno, um arquivo, um site, qualquer lugar em que você vai enviar essa in-
+  formação após o fim do processados
+
+# Resumo
+  Um arquivo grande, como uma página html, é transformado em pedacinhos e cada
+  pedacinho passa pelos processos citados acima
+
+# Pipelines
+  Cada chunk do arquivo vai passar por cada uma das etapas acima, como um funil
+  e esse funil é chamado de pipelines
